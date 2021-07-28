@@ -13,4 +13,4 @@ now start the symfony web server:
 symfony server:start
 ```
 
-The Web server runs at localhost:8000. So goto the /my/fun/code route after the localhost:8000 to get the result.
+The Web server runs at localhost:8000. So goto the /myfuncode route after the localhost:8000 to get the result.
