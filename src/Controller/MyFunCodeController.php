@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class MyFunCodeController extends AbstractController
 {
     /**
-     * @Route('/myfuncode', name: 'my_fun_code')
+     * @Route('/fun/number', name: 'funNumber')
      */
     
      public function funNumber() 
