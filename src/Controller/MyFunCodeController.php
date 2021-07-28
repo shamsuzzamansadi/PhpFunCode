@@ -14,19 +14,19 @@ class MyFunCodeController extends AbstractController
     
      public function funNumber() 
     {
-        $numbers = range(1,100,1);
-        while($numbers){
-            echo $numbers;
-            if($numbers%3 === true){
-                echo "Fizz" ;
-            }elseif($numbers%5 === true){
+        foreach(range(1,100,1) as $numbers){
+
+            if($numbers%3 == 0 && $numbers%5 == 0){
+                echo "FizzBuzz" ;
+            }elseif($numbers%3 == 0){
+                echo "Fizz";
+            }elseif($numbers%5 == 0){
                 echo "Buzz";
-            }elseif($numbers%3 === true && $numbers%5 === true){
-                echo "FizzBuzz";
+            }else{
+                echo $numbers;
             }
             echo "<br>";
         }
-        
 
         die;
     }
