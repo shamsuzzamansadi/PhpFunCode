@@ -8,7 +8,7 @@ class MyFunCodeControllerTest extends TypeTestCase
 {
     public function testNormalInputSet() {
         $fizzBuzz = new MyFunCodeController();
-        $inputSet = range(1,100,1);
+        $inputDataSet = range(1,100,1);
         $expectedResults = array(
             1,
             2,
@@ -111,7 +111,7 @@ class MyFunCodeControllerTest extends TypeTestCase
             "Fizz",
             'Buzz'
         );
-        $testResults = $fizzBuzz->fizprocess($inputSet);
+        $testResults = $fizzBuzz->fizprocess($inputDataSet);
         $this->assertEquals($expectedResults, $testResults);
     }
 }

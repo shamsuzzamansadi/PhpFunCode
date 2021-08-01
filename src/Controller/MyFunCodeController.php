@@ -9,10 +9,14 @@ use Symfony\Component\Routing\Annotation\Route;
 class MyFunCodeController extends AbstractController
 {
     #[Route('/my/fun/code', name: 'my_fun_code')]
-    public function fizprocess()
+    public function fizprocess($numbers)
     {   
-        $numbers = range(1,100,1);
+        if(empty($numbers)){
+            $numbers = range(1,100,1);
+        }
+        
         $results = array();
+        
         foreach(numbers as $number){
             $outputValue = '';
 
