@@ -37,7 +37,7 @@ class MyFunCodeControllerTest extends TypeTestCase
             "Buzz",
             26,
             "Fizz",
-            28
+            28,
             29,
             "FizzBuzz",
             31,
