@@ -10,11 +10,8 @@
 
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/opt/lampp/htdocs/my test/PhpFunCode/src/Controller/MyFunCodeController.php'|file_link(0) }}">src/Controller/MyFunCodeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/opt/lampp/htdocs/my test/PhpFunCode/templates/my_fun_code/index.html.twig'|file_link(0) }}">templates/my_fun_code/index.html.twig</a></code></li>
-    </ul>
+    {% for result in results %}
+        <h2> {{ result }} </h2>
+    {% endfor %}
 </div>
 {% endblock %}
